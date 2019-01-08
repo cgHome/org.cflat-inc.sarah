@@ -1,0 +1,24 @@
+{
+  "id": "org.cflat-inc.sarah",
+  "version": "0.0.1",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "name": {
+    "en": "S.A.R.A.H."
+  },
+  "description": {
+    "en": "Smart home manager "
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Chris Gross",
+    "email": "cghome@gmx.net"
+  }
+}
