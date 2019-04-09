@@ -36,5 +36,9 @@
   "homepage": "https://apps.athom.com/app/org.cflat-inc.sarah",
   "dependencies": {
     "athom-api": "~2.0.148"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {}
 }
