@@ -1,6 +1,6 @@
 {
   "name": "org.cflat-inc.sarah",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Smart home manager ",
   "main": "app.js",
   "scripts": {
