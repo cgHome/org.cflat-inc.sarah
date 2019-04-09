@@ -1,0 +1,9 @@
+.homeyignore
+.gitattributes
+.gitignore
+.git/
+.vscode/
+docs/
+package-lock.json
+package.json
+*.md

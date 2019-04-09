@@ -1,1 +1,15 @@
-{}
+{
+	"settings": {
+		"benefit": "Event based lightweight middleware"
+	},
+	"tab1": {
+		"title": "Dashboard",
+		"states": "Current states",
+		"statesRefresh": "Refresh states",
+		"events": "Events"
+	},
+	"tab2": {
+		"title": "Configuration",
+		"config": "Configuration"
+	}
+}

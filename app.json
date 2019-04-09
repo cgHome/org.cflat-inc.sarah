@@ -1,24 +1,289 @@
 {
-  "id": "org.cflat-inc.sarah",
-  "version": "0.0.1",
-  "compatibility": ">=1.5.0",
-  "sdk": 2,
-  "name": {
-    "en": "S.A.R.A.H."
-  },
-  "description": {
-    "en": "Smart home manager "
-  },
-  "category": [
-    "tools"
-  ],
-  "permissions": [],
-  "images": {
-    "large": "/assets/images/large.png",
-    "small": "/assets/images/small.png"
-  },
-  "author": {
-    "name": "Chris Gross",
-    "email": "cghome@gmx.net"
-  }
+	"id": "org.cflat-inc.sarah",
+	"version": "0.0.1",
+	"compatibility": ">=1.5.0",
+	"sdk": 2,
+	"name": {
+		"en": "S.A.R.A.H"
+	},
+	"description": {
+		"en": "Event based lightweight middleware for Smart Home"
+	},
+	"category": ["tools"],
+	"brandColor": "#a9a9a9",
+	"permissions": ["homey:manager:api"],
+	"images": {
+		"large": "/assets/images/large.png",
+		"small": "/assets/images/small.png"
+	},
+	"author": {
+		"name": "Chris Gross",
+		"email": "cghome@cflat-inc.org"
+	},
+	"flow": {
+		"triggers": [
+			{
+				"id": "event_listener",
+				"title": { "en": "Event received" },
+				"args": [
+					{
+						"name": "zone",
+						"placeholder": { "en": "Zone..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "group",
+						"placeholder": { "en": "Group..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "event",
+						"placeholder": { "en": "Event..." },
+						"type": "autocomplete"
+					}
+				],
+				"tokens": [
+					{
+						"name": "args",
+						"type": "string",
+						"title": {
+							"en": "args"
+						},
+						"example": {
+							"en": "Arguments"
+						}
+					}
+				]
+			},
+			{
+				"id": "state_listener",
+				"title": { "en": "State changed" },
+				"args": [
+					{
+						"name": "zone",
+						"placeholder": { "en": "Zone..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "group",
+						"placeholder": { "en": "Group..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "state",
+						"placeholder": { "en": "State..." },
+						"type": "autocomplete"
+					}
+				],
+				"tokens": [
+					{
+						"name": "value",
+						"type": "string",
+						"title": {
+							"en": "Value"
+						},
+						"example": {
+							"en": "State-Value"
+						}
+					}
+				]
+			},
+			{
+				"id": "state_value_listener",
+				"title": { "en": "State changed to" },
+				"args": [
+					{
+						"name": "zone",
+						"placeholder": { "en": "Zone..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "group",
+						"placeholder": { "en": "Group..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "state",
+						"placeholder": { "en": "State..." },
+						"type": "autocomplete"
+					}
+				]
+			},
+			{
+				"id": "init_listener",
+				"title": { "en": "S.A.R.A.H initialize" }
+			},
+			{
+				"id": "app_log_listener",
+				"title": { "en": "Homey-App - Logger" },
+				"tokens": [
+					{
+						"name": "name",
+						"type": "string",
+						"title": {
+							"en": "name"
+						},
+						"example": {
+							"en": "App-Name"
+						}
+					},
+					{
+						"name": "msg",
+						"type": "string",
+						"title": {
+							"en": "msg"
+						},
+						"example": {
+							"en": "Log message"
+						}
+					}
+				]
+			},
+			{
+				"id": "app_error_listener",
+				"title": { "en": "Homey-App - Error-Logger" },
+				"tokens": [
+					{
+						"name": "name",
+						"type": "string",
+						"title": {
+							"en": "name"
+						},
+						"example": {
+							"en": "App-Name"
+						}
+					},
+					{
+						"name": "msg",
+						"type": "string",
+						"title": {
+							"en": "msg"
+						},
+						"example": {
+							"en": "Error message"
+						}
+					}
+				]
+			},
+			{
+				"id": "app_debug_listener",
+				"title": { "en": "Homey-App - Debug-Logger" },
+				"tokens": [
+					{
+						"name": "name",
+						"type": "string",
+						"title": {
+							"en": "name"
+						},
+						"example": {
+							"en": "App-Name"
+						}
+					},
+					{
+						"name": "msg",
+						"type": "string",
+						"title": {
+							"en": "msg"
+						},
+						"example": {
+							"en": "Debug message"
+						}
+					}
+				]
+			}
+		],
+		"actions": [
+			{
+				"id": "event_emitter",
+				"title": { "en": "Send Event" },
+				"args": [
+					{
+						"name": "zone",
+						"placeholder": { "en": "Zone..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "group",
+						"placeholder": { "en": "Group..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "event",
+						"placeholder": { "en": "Event..." },
+						"type": "autocomplete"
+					}
+				]
+			},
+			{
+				"id": "event_args_emitter",
+				"title": { "en": "Send Event with arguments" },
+				"args": [
+					{
+						"name": "zone",
+						"placeholder": { "en": "Zone..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "group",
+						"placeholder": { "en": "Group..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "event",
+						"placeholder": { "en": "Event..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "args",
+						"placeholder": { "en": "Arguments..." },
+						"type": "text"
+					}
+				]
+			},
+			{
+				"id": "state_emitter",
+				"title": { "en": "Set state" },
+				"args": [
+					{
+						"name": "zone",
+						"placeholder": { "en": "Zone..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "group",
+						"placeholder": { "en": "Group..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "state",
+						"placeholder": { "en": "State..." },
+						"type": "autocomplete"
+					}
+				]
+			}
+		],
+		"conditions": [
+			{
+				"id": "state_value_condition",
+				"title": { "en": "!{{State active|State not active}}" },
+				"args": [
+					{
+						"name": "zone",
+						"placeholder": { "en": "Zone..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "group",
+						"placeholder": { "en": "Group..." },
+						"type": "autocomplete"
+					},
+					{
+						"name": "state",
+						"placeholder": { "en": "State..." },
+						"type": "autocomplete"
+					}
+				]
+			}
+		]
+	}
 }

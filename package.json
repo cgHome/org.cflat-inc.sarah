@@ -24,7 +24,7 @@
     "homey",
     "app"
   ],
-  "author": "Chris Gross <cghome@gmx.net>",
+  "author": "Chris Gross <cghome@cflat-inc.org>",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/cgHome/org.cflat-inc.sarah/issues"
   },
-  "homepage": "https://apps.athom.com/app/org.cflat-inc.sarah"
+  "homepage": "https://apps.athom.com/app/org.cflat-inc.sarah",
+  "dependencies": {
+    "athom-api": "~2.0.148"
+  }
 }

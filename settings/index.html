@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css" />
+
+		<script type="text/javascript" src="/homey.js" data-origin="settings"></script>
+		<script type="text/javascript" src="/manager/webserver/assets/js/jquery.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js" charset="utf8"></script>
+		<script type="text/javascript" src="settings.js" data-origin="settings"></script>
+	</head>
+	<body>
+		<div id="app">
+			<p data-i18n="settings.benefit"></p>
+			<div id="tabs" class="rTable" style="display: none;">
+				<div id="tabb1" class="tab tab-active" onclick="showTab(1)" data-i18n="tab1.title">-Dashboard-</div>
+				<div id="tabb2" class="tab tab-inactive" onclick="showTab(2)" data-i18n="tab2.title">-Configuration-</div>
+			</div>
+			<div id="tab1" class="panel" style="display: none;">
+				<div class="settings-top"></div>
+				<div class="settings-spacer"></div>
+				<div data-i18n="tab1.states" class="text-header">-States-</div>
+				<div class="settings-itemgroup">
+					<div class="settings-item">
+						<table id="currentStates" class="display compact" style="width:100%">
+							<thead>
+								<tr>
+									<th>zIdx</th>
+									<th>Zone</th>
+									<th>gIdx</th>
+									<th>Group</th>
+									<th>State</th>
+									<th>Value</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>[zIdx]</th>
+									<th>[Zone]</th>
+									<th>[gIdx]</th>
+									<th>[Group]</th>
+									<th>[State]</th>
+									<th>[Value]</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="settings-spacer"></div>
+					<div class="settings-item">
+						<button id="statesRefreshBtn" title="Temp - until Homey.on() is working" class="right" onclick="refreshCurrentStates()">
+							<span data-i18n="tab1.statesRefresh">-Refresh-</span>
+						</button>
+					</div>
+					<div class="settings-spacer"></div>
+				</div>
+				<div class="settings-spacer"></div>
+				<div data-i18n="tab1.events" class="text-header">-Events-</div>
+				<div class="settings-itemgroup">
+					<div class="settings-item">
+						<table id="sarahEvents" class="display compact" style="width:100%">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Time</th>
+									<th>Message</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[Date]</td>
+									<td>[Time]</td>
+									<td>[Message]</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div id="tab2" class="panel" style="display: none;">
+				<div class="settings-top"></div>
+				<div class="settings-spacer"></div>
+				<div data-i18n="tab2.config" class="text-header">-Configuration-</div>
+				<div class="settings-itemgroup">
+					<div class="settings-item-text">
+						<textarea id="configJson" style="resize:both"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

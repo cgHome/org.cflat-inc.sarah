@@ -1,0 +1,250 @@
+          CSV   Clear log
+2019-03-21 10:43:51 [Simple LOG] Cleared all logging data
+2019-03-21 10:44:12 [S.A.R.A.H] S.A.R.A.H-App - v0.0.1 is running...
+2019-03-21 10:44:12 [S.A.R.A.H] Initialize settings
+2019-03-21 10:44:31 [Home::Internal] onAction-InitSarah
+2019-03-21 10:44:31 [S.A.R.A.H] »»» Event fired -> Home::Internal #initSarah()
+2019-03-21 10:44:31 [S.A.R.A.H] »»» Event matched -> Home::Internal #initSarah()
+2019-03-21 10:44:31 [Home::Internal] at-InitSarah
+2019-03-21 10:44:31 [S.A.R.A.H] »»» Event fired -> Home::Internal #initHome()
+2019-03-21 10:44:32 [S.A.R.A.H] »»» Event matched -> Home::Internal #initHome()
+2019-03-21 10:44:32 [S.A.R.A.H] »»» Event matched -> Home::Internal #initHome()
+2019-03-21 10:44:32 [S.A.R.A.H] »»» Event matched -> Home::Internal #initHome()
+2019-03-21 10:44:32 [LivingRoom::Entertainment] *at-Home::Internal::initHome
+2019-03-21 10:44:32 [Home::Security] at-Home::Internal::initHome
+2019-03-21 10:44:32 [Kitchen::Light] at-Home::Internal::initHome
+2019-03-21 10:44:32 [S.A.R.A.H] »»» Event fired -> Küche::Light #power-off()
+2019-03-21 10:44:32 [Home::Security] Alarm -> Disarmed-Mode
+2019-03-21 10:44:32 [S.A.R.A.H] »»» Event matched -> Küche::Light #power-off()
+2019-03-21 10:44:32 [Kitchen::Light] at-power-off
+2019-03-21 10:44:35 [Home::Internal] atInitSarah - ToD > Daytime
+2019-03-21 10:44:35 [S.A.R.A.H] »»» Event fired -> Home::ToD #atDaytime()
+2019-03-21 10:44:35 [S.A.R.A.H] »»» Event matched -> Home::ToD #atDaytime()
+2019-03-21 10:44:35 [Home::ToD] at-Daytime (nop)
+2019-03-21 10:45:02 [Home::ToD] onAction-ToD::atEvening
+2019-03-21 10:45:02 [S.A.R.A.H] »»» Event fired -> Home::ToD #atEvening()
+2019-03-21 10:45:02 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-21 10:45:02 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-21 10:45:02 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-21 10:45:02 [Office::Light] at-Home::ToD::atEvening
+2019-03-21 10:45:02 [LivingRoom::Light] at-Home::ToD::atEvening
+2019-03-21 10:45:02 [Home::ToD] at-Evening (nop)
+2019-03-21 10:45:02 [S.A.R.A.H] »»» Event fired -> Büro::Light #easyLight-mode()
+2019-03-21 10:45:03 [S.A.R.A.H] »»» Event fired -> Wohnzimmer::Light #light-mode()
+2019-03-21 10:45:03 [S.A.R.A.H] »»» Event matched -> Büro::Light #easyLight-mode()
+2019-03-21 10:45:03 [Office::Light] at-easyLight-mode
+2019-03-21 10:45:03 [S.A.R.A.H] »»» Event matched -> Wohnzimmer::Light #light-mode()
+2019-03-21 10:45:03 [LivingRoom::Light] at-light-mode
+2019-03-21 10:45:03 [S.A.R.A.H] »»» State changed -> Home::ToD #atEvening() - timeOfDay: "Daytime" > "Evening"
+2019-03-21 10:45:03 [S.A.R.A.H] »»» State changed -> Büro::Light #easyLight-mode() - mode: "None" > "EasyLight-Mode"
+2019-03-21 10:45:03 [S.A.R.A.H] »»» State changed -> Wohnzimmer::Light #light-mode() - mode: "None" > "Light-Mode"
+2019-03-21 10:45:04 [S.A.R.A.H] »»» State-Value matched -> Home::ToD::timeOfDay = Evening
+2019-03-21 10:47:10 [Home:ToD] onAction-ToD::atGoToSleep
+2019-03-21 10:47:10 [S.A.R.A.H] »»» Event fired -> Home::ToD #atGoToSleep()
+2019-03-21 10:47:10 [S.A.R.A.H] »»» Event matched -> Home::ToD #atGoToSleep()
+2019-03-21 10:47:10 [S.A.R.A.H] »»» Event matched -> Home::ToD #atGoToSleep()
+2019-03-21 10:47:10 [S.A.R.A.H] »»» Event matched -> Home::ToD #atGoToSleep()
+2019-03-21 10:47:10 [Office::Light] at-Home::ToD::atGoToSleep
+2019-03-21 10:47:10 [LivingRoom::Light] at-Home::ToD::atGoToSleep
+2019-03-21 10:47:10 [Home::ToD] at-GoToSleep
+2019-03-21 10:47:11 [S.A.R.A.H] »»» Event fired -> Büro::Light #power-off()
+2019-03-21 10:47:11 [S.A.R.A.H] »»» Event fired -> Wohnzimmer::Light #power-off()
+2019-03-21 10:47:11 [S.A.R.A.H] »»» Event matched -> Büro::Light #power-off()
+2019-03-21 10:47:11 [Office::Light] at-power-off
+2019-03-21 10:56:46 [S.A.R.A.H] »»» State changed -> Home::ToD #atGoToSleep() - timeOfDay: "Evening" > "Nighttime"
+2019-03-21 10:56:46 [S.A.R.A.H] »»» Event matched -> Wohnzimmer::Light #power-off()
+2019-03-21 10:56:46 [LivingRoom::Light] at-power-off
+2019-03-21 12:46:18 [Home::Presence] on-PersonLeavesHome: Chris
+2019-03-21 12:46:18 [Home::Presence] on-LastPersonLeavesHome
+2019-03-21 15:58:28 [Home::Presence] on-PersonComesHome: Chris
+2019-03-21 15:58:28 [Home::Presence] on-FirstPersonComesHome
+2019-03-21 16:36:51 [Office::Zone] onAction-Els1 -> Schreibtischlampe on/off
+2019-03-21 18:37:46 [S.A.R.A.H] S.A.R.A.H-App - v0.0.1 is running...
+2019-03-21 18:37:46 [S.A.R.A.H] Initialize settings
+2019-03-21 18:38:24 [Home::Internal] onAction-InitSarah
+2019-03-21 18:38:24 [S.A.R.A.H] »»» Event fired -> Home::Internal #initSarah()
+2019-03-21 18:38:24 [S.A.R.A.H] »»» Event matched -> Home::Internal #initSarah()
+2019-03-21 18:38:24 [Home::Internal] at-InitSarah
+2019-03-21 18:38:24 [S.A.R.A.H] »»» Event fired -> Home::Internal #initHome()
+2019-03-21 18:38:24 [S.A.R.A.H] »»» Event matched -> Home::Internal #initHome()
+2019-03-21 18:38:24 [S.A.R.A.H] »»» Event matched -> Home::Internal #initHome()
+2019-03-21 18:38:24 [LivingRoom::Entertainment] *at-Home::Internal::initHome
+2019-03-21 18:38:24 [Home::Security] at-Home::Internal::initHome
+2019-03-21 18:38:25 [S.A.R.A.H] »»» Event matched -> Home::Internal #initHome()
+2019-03-21 18:38:25 [Kitchen::Light] at-Home::Internal::initHome
+2019-03-21 18:38:25 [S.A.R.A.H] »»» Event fired -> Küche::Light #power-off()
+2019-03-21 18:38:25 [Home::Security] Alarm -> Disarmed-Mode
+2019-03-21 18:38:25 [S.A.R.A.H] »»» Event matched -> Küche::Light #power-off()
+2019-03-21 18:38:25 [Kitchen::Light] at-power-off
+2019-03-21 18:38:27 [Home::Internal] atInitSarah - ToD > Daytime
+2019-03-21 18:38:28 [S.A.R.A.H] »»» Event fired -> Home::ToD #atDaytime()
+2019-03-21 18:38:28 [S.A.R.A.H] »»» Event matched -> Home::ToD #atDaytime()
+2019-03-21 18:38:28 [Home::ToD] at-Daytime (nop)
+2019-03-21 18:38:43 [Home::ToD] onAction-ToD::atEvening
+2019-03-21 18:38:44 [S.A.R.A.H] »»» Event fired -> Home::ToD #atEvening()
+2019-03-21 18:38:44 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-21 18:38:44 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-21 18:38:44 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-21 18:38:44 [Office::Light] at-Home::ToD::atEvening
+2019-03-21 18:38:44 [LivingRoom::Light] at-Home::ToD::atEvening
+2019-03-21 18:38:44 [Home::ToD] at-Evening (nop)
+2019-03-21 18:38:44 [S.A.R.A.H] »»» Event fired -> Büro::Light #easyLight-mode()
+2019-03-21 18:38:44 [S.A.R.A.H] »»» Event fired -> Wohnzimmer::Light #light-mode()
+2019-03-21 18:38:44 [S.A.R.A.H] »»» Event matched -> Büro::Light #easyLight-mode()
+2019-03-21 18:38:44 [Office::Light] at-easyLight-mode
+2019-03-21 18:38:45 [S.A.R.A.H] »»» Event matched -> Wohnzimmer::Light #light-mode()
+2019-03-21 18:38:45 [LivingRoom::Light] at-light-mode
+2019-03-21 18:38:45 [S.A.R.A.H] »»» State changed -> Home::ToD #atEvening() - timeOfDay: "Daytime" > "Evening"
+2019-03-21 18:38:45 [S.A.R.A.H] »»» State changed -> Büro::Light #easyLight-mode() - mode: "None" > "EasyLight-Mode"
+2019-03-21 18:38:45 [S.A.R.A.H] »»» State changed -> Wohnzimmer::Light #light-mode() - mode: "None" > "Light-Mode"
+2019-03-21 18:38:45 [S.A.R.A.H] »»» State-Value matched -> Home::ToD::timeOfDay = Evening
+2019-03-21 18:39:44 [Kitchen::Light] onAction-Light::easyLight-mode
+2019-03-21 18:39:44 [S.A.R.A.H] »»» Event fired -> Küche::Light #easyLight-mode()
+2019-03-21 18:39:44 [S.A.R.A.H] »»» Event matched -> Küche::Light #easyLight-mode()
+2019-03-21 18:39:44 [Kitchen::Light] at-easyLight-mode
+2019-03-21 18:39:44 [S.A.R.A.H] »»» State changed -> Küche::Light #easyLight-mode() - mode: "None" > "EasyLight-Mode"
+2019-03-21 18:39:49 [Kitchen::Light] MotionSensor -> disable
+2019-03-21 20:45:46 [S.A.R.A.H] S.A.R.A.H-App - v0.0.1 is running...
+2019-03-21 20:45:46 [S.A.R.A.H] Initialize settings
+2019-03-21 20:47:23 [Home::Internal] atInitSarah - ToD > Evening
+2019-03-21 20:47:23 [S.A.R.A.H] »»» Event fired -> Home::ToD #atEvening()
+2019-03-21 20:47:23 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-21 20:47:23 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-21 20:47:23 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-21 20:47:23 [Office::Light] at-Home::ToD::atEvening
+2019-03-21 20:47:23 [LivingRoom::Light] at-Home::ToD::atEvening
+2019-03-21 20:47:23 [Home::ToD] at-Evening (nop)
+2019-03-21 20:47:23 [S.A.R.A.H] »»» Event fired -> Büro::Light #easyLight-mode()
+2019-03-21 20:47:24 [S.A.R.A.H] »»» Event fired -> Wohnzimmer::Light #light-mode()
+2019-03-21 20:47:24 [S.A.R.A.H] »»» Event matched -> Büro::Light #easyLight-mode()
+2019-03-21 20:47:24 [Office::Light] at-easyLight-mode
+2019-03-21 20:47:24 [S.A.R.A.H] »»» State changed -> Home::ToD #atEvening() - timeOfDay: "Daytime" > "Evening"
+2019-03-21 20:47:24 [S.A.R.A.H] »»» Event matched -> Wohnzimmer::Light #light-mode()
+2019-03-21 20:47:25 [LivingRoom::Light] at-light-mode
+2019-03-21 20:47:25 [S.A.R.A.H] »»» State-Value matched -> Home::ToD::timeOfDay = Evening
+2019-03-21 20:47:25 [S.A.R.A.H] »»» State changed -> Büro::Light #easyLight-mode() - mode: "None" > "EasyLight-Mode"
+2019-03-21 20:47:25 [S.A.R.A.H] »»» State changed -> Wohnzimmer::Light #light-mode() - mode: "None" > "Light-Mode"
+2019-03-21 22:51:25 [Kitchen::Light] onAction-Light::light-mode [on]/off
+2019-03-21 22:51:25 [S.A.R.A.H] »»» Event fired -> Küche::Light #power-off()
+2019-03-21 22:51:25 [S.A.R.A.H] »»» Event matched -> Küche::Light #power-off()
+2019-03-21 22:51:25 [Kitchen::Light] at-power-off
+2019-03-21 22:51:25 [Kitchen::Light] MotionSensor -> enable
+2019-03-21 22:58:29 [Corridor::Light] onAction-Light::light-mode [on]/off
+2019-03-21 22:58:29 [S.A.R.A.H] »»» Event fired -> Gang::Light #power-off()
+2019-03-21 22:58:29 [S.A.R.A.H] »»» Event matched -> Gang::Light #power-off()
+2019-03-21 22:58:29 [Corridor::Light] at-power-off
+2019-03-21 22:59:01 [Corridor::Light] onAction-Light::light-mode on/[off]
+2019-03-21 22:59:01 [S.A.R.A.H] »»» Event fired -> Gang::Light #light-mode()
+2019-03-21 22:59:01 [S.A.R.A.H] »»» Event matched -> Gang::Light #light-mode()
+2019-03-21 22:59:01 [Corridor::Light] at-light-mode
+2019-03-21 22:59:01 [S.A.R.A.H] »»» State changed -> Gang::Light #light-mode() - mode: "None" > "Light-Mode"
+2019-03-21 22:59:01 [Corridor::Light] MotionSensor -> disable
+2019-03-21 22:59:15 [Corridor::Light] onAction-Light::light-mode [on]/off
+2019-03-21 22:59:15 [S.A.R.A.H] »»» Event fired -> Gang::Light #power-off()
+2019-03-21 22:59:15 [S.A.R.A.H] »»» Event matched -> Gang::Light #power-off()
+2019-03-21 22:59:15 [Corridor::Light] at-power-off
+2019-03-21 22:59:15 [S.A.R.A.H] »»» State changed -> Gang::Light #power-off() - mode: "Light-Mode" > "None"
+2019-03-21 22:59:16 [Corridor::Light] MotionSensor -> enable
+2019-03-21 22:59:23 [Corridor::Light] onAction-Light::light-mode on/[off]
+2019-03-21 22:59:24 [S.A.R.A.H] »»» Event fired -> Gang::Light #light-mode()
+2019-03-21 22:59:24 [S.A.R.A.H] »»» Event matched -> Gang::Light #light-mode()
+2019-03-21 22:59:24 [Corridor::Light] at-light-mode
+2019-03-21 22:59:24 [S.A.R.A.H] »»» State changed -> Gang::Light #light-mode() - mode: "None" > "Light-Mode"
+2019-03-21 22:59:24 [Corridor::Light] MotionSensor -> disable
+2019-03-21 23:13:23 [Corridor::Light] onAction-Light::light-mode [on]/off
+2019-03-21 23:13:23 [S.A.R.A.H] »»» Event fired -> Gang::Light #power-off()
+2019-03-21 23:13:23 [S.A.R.A.H] »»» Event matched -> Gang::Light #power-off()
+2019-03-21 23:13:23 [Corridor::Light] at-power-off
+2019-03-21 23:13:23 [S.A.R.A.H] »»» State changed -> Gang::Light #power-off() - mode: "Light-Mode" > "None"
+2019-03-21 23:13:24 [Corridor::Light] MotionSensor -> enable
+2019-03-21 23:17:32 [Kitchen::Light] onAction-Light::easyLight-mode
+2019-03-21 23:17:32 [S.A.R.A.H] »»» Event fired -> Küche::Light #easyLight-mode()
+2019-03-21 23:17:32 [S.A.R.A.H] »»» Event matched -> Küche::Light #easyLight-mode()
+2019-03-21 23:17:32 [Kitchen::Light] at-easyLight-mode
+2019-03-21 23:17:32 [S.A.R.A.H] »»» State changed -> Küche::Light #easyLight-mode() - mode: "None" > "EasyLight-Mode"
+2019-03-21 23:17:33 [Kitchen::Light] MotionSensor -> disable
+2019-03-21 23:37:52 [Kitchen::Light] onAction-Light::light-mode [on]/off
+2019-03-21 23:37:52 [S.A.R.A.H] »»» Event fired -> Küche::Light #power-off()
+2019-03-21 23:37:52 [S.A.R.A.H] »»» Event matched -> Küche::Light #power-off()
+2019-03-21 23:37:52 [Kitchen::Light] at-power-off
+2019-03-21 23:37:52 [S.A.R.A.H] »»» State changed -> Küche::Light #power-off() - mode: "EasyLight-Mode" > "None"
+2019-03-21 23:37:52 [Kitchen::Light] MotionSensor -> enable
+2019-03-22 00:01:00 [S.A.R.A.H] »»» State-Value condition -> Home::ToD::timeOfDay === Evening
+2019-03-22 00:01:00 [Home::ToD] onAuto-ToD::atGoToSleep
+2019-03-22 00:01:00 [S.A.R.A.H] »»» Event fired -> Home::ToD #atGoToSleep()
+2019-03-22 00:01:00 [S.A.R.A.H] »»» Event matched -> Home::ToD #atGoToSleep()
+2019-03-22 00:01:00 [S.A.R.A.H] »»» Event matched -> Home::ToD #atGoToSleep()
+2019-03-22 00:01:00 [S.A.R.A.H] »»» Event matched -> Home::ToD #atGoToSleep()
+2019-03-22 00:01:00 [Office::Light] at-Home::ToD::atGoToSleep
+2019-03-22 00:01:00 [LivingRoom::Light] at-Home::ToD::atGoToSleep
+2019-03-22 00:01:00 [Home::ToD] at-GoToSleep
+2019-03-22 00:01:00 [S.A.R.A.H] »»» Event fired -> Büro::Light #power-off()
+2019-03-22 00:01:00 [S.A.R.A.H] »»» Event fired -> Wohnzimmer::Light #power-off()
+2019-03-22 00:01:00 [S.A.R.A.H] »»» Event matched -> Büro::Light #power-off()
+2019-03-22 00:01:00 [Office::Light] at-power-off
+2019-03-22 00:01:01 [S.A.R.A.H] »»» State changed -> Home::ToD #atGoToSleep() - timeOfDay: "Evening" > "Nighttime"
+2019-03-22 00:01:01 [S.A.R.A.H] »»» Event matched -> Wohnzimmer::Light #power-off()
+2019-03-22 00:01:01 [LivingRoom::Light] at-power-off
+2019-03-22 00:01:01 [S.A.R.A.H] »»» State-Value matched -> Home::ToD::timeOfDay = Nighttime
+2019-03-22 00:01:01 [S.A.R.A.H] »»» State changed -> Büro::Light #power-off() - mode: "EasyLight-Mode" > "None"
+2019-03-22 00:01:01 [Home::Security] at-Home::ToD::atNighttime
+2019-03-22 00:01:01 [S.A.R.A.H] »»» State changed -> Wohnzimmer::Light #power-off() - mode: "Light-Mode" > "None"
+2019-03-22 00:01:01 [Home::Security] Alarm -> PartialArmed-Mode
+2019-03-22 00:30:00 [Home::Internal] onAuto-CleanUp
+2019-03-22 00:31:00 [S.A.R.A.H] »»» Event fired -> Home::ToD #atNighttime()
+2019-03-22 00:31:00 [S.A.R.A.H] »»» Event matched -> Home::ToD #atNighttime()
+2019-03-22 00:31:00 [Home::ToD] at-Nighttime (nop)
+2019-03-22 06:49:10 [S.A.R.A.H] »»» State-Value condition -> Home::ToD::timeOfDay === Nighttime
+2019-03-22 06:49:10 [Home::ToD] onAuto-ToD::atWakeUp
+2019-03-22 06:49:10 [S.A.R.A.H] »»» Event fired -> Home::ToD #atWakeUp()
+2019-03-22 06:49:10 [S.A.R.A.H] »»» Event matched -> Home::ToD #atWakeUp()
+2019-03-22 06:49:10 [Home::ToD] at-WakeUp
+2019-03-22 06:49:10 [S.A.R.A.H] »»» Event fired -> Home::ToD #atDaytime()
+2019-03-22 06:49:10 [S.A.R.A.H] »»» Event matched -> Home::ToD #atDaytime()
+2019-03-22 06:49:10 [Home::ToD] at-Daytime (nop)
+2019-03-22 06:49:10 [S.A.R.A.H] »»» State changed -> Home::ToD #atWakeUp() - timeOfDay: "Nighttime" > "Daytime"
+2019-03-22 06:49:10 [S.A.R.A.H] »»» State-Value matched -> Home::ToD::timeOfDay = Daytime
+2019-03-22 06:49:11 [Home::Security] at-Home::ToD::atDaytime
+2019-03-22 06:49:11 [Home::Security] Alarm -> Disarmed-Mode
+2019-03-22 10:20:13 [Home::Presence] on-PersonLeavesHome: Chris
+2019-03-22 10:20:14 [Home::Presence] on-LastPersonLeavesHome
+2019-03-22 10:20:14 [S.A.R.A.H] »»» Event fired -> Home::Presence #aPersonLeavesHome(Chris)
+2019-03-22 10:20:14 [S.A.R.A.H] »»» Event fired -> Home::Presence #goAway()
+2019-03-22 10:20:14 [Home::Presence] at-PersonLeavesHome: Chris
+2019-03-22 10:20:14 [S.A.R.A.H] »»» Event matched -> Home::Presence #aPersonLeavesHome(Chris)
+2019-03-22 10:20:14 [S.A.R.A.H] »»» Event matched -> Home::Presence #goAway()
+2019-03-22 10:20:14 [S.A.R.A.H] »»» Event matched -> Home::Presence #goAway()
+2019-03-22 10:20:14 [Home::Presence] at-GoAway (nop)
+2019-03-22 10:20:14 [Home::Security] Home::Presence::goAway
+2019-03-22 10:20:14 [S.A.R.A.H] »»» State changed -> Home::Presence #goAway() - presence: "Home" > "Away"
+2019-03-22 10:20:14 [Home::Security] Alarm -> Armed-Mode
+2019-03-22 15:59:42 [Home::Presence] on-PersonComesHome: Chris
+2019-03-22 15:59:42 [Home::Presence] on-FirstPersonComesHome
+2019-03-22 15:59:43 [S.A.R.A.H] »»» Event fired -> Home::Presence #aPersonComesHome(Chris)
+2019-03-22 15:59:43 [S.A.R.A.H] »»» Event fired -> Home::Presence #comeHome()
+2019-03-22 15:59:43 [Home::Presence] at-PersonComesHome: Chris
+2019-03-22 15:59:43 [S.A.R.A.H] »»» Event matched -> Home::Presence #aPersonComesHome(Chris)
+2019-03-22 15:59:43 [S.A.R.A.H] »»» Event matched -> Home::Presence #comeHome()
+2019-03-22 15:59:43 [S.A.R.A.H] »»» Event matched -> Home::Presence #comeHome()
+2019-03-22 15:59:43 [Home::Security] at-Home::Presence::comeHome
+2019-03-22 15:59:43 [Home::Presence] at-ComeHome (nop)
+2019-03-22 15:59:43 [S.A.R.A.H] »»» State changed -> Home::Presence #comeHome() - presence: "Away" > "Home"
+2019-03-22 15:59:43 [Home::Security] Alarm -> Disarmed-Mode
+2019-03-22 18:10:35 [Home::ToD] onAuto-ToD::atEvening
+2019-03-22 18:10:35 [S.A.R.A.H] »»» Event fired -> Home::ToD #atEvening()
+2019-03-22 18:10:35 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-22 18:10:35 [Office::Light] at-Home::ToD::atEvening
+2019-03-22 18:10:35 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-22 18:10:35 [LivingRoom::Light] at-Home::ToD::atEvening
+2019-03-22 18:10:35 [Home::ToD] at-Evening (nop)
+2019-03-22 18:10:35 [S.A.R.A.H] »»» Event matched -> Home::ToD #atEvening()
+2019-03-22 18:10:35 [S.A.R.A.H] »»» Event fired -> Büro::Light #easyLight-mode()
+2019-03-22 18:10:35 [S.A.R.A.H] »»» Event fired -> Wohnzimmer::Light #light-mode()
+2019-03-22 18:10:35 [S.A.R.A.H] »»» State changed -> Home::ToD #atEvening() - timeOfDay: "Daytime" > "Evening"
+2019-03-22 18:10:35 [S.A.R.A.H] »»» Event matched -> Büro::Light #easyLight-mode()
+2019-03-22 18:10:36 [Office::Light] at-easyLight-mode
+2019-03-22 18:10:36 [S.A.R.A.H] »»» Event matched -> Wohnzimmer::Light #light-mode()
+2019-03-22 18:10:36 [LivingRoom::Light] at-light-mode
+2019-03-22 18:10:36 [S.A.R.A.H] »»» State-Value matched -> Home::ToD::timeOfDay = Evening
+2019-03-22 18:10:36 [S.A.R.A.H] »»» State changed -> Büro::Light #easyLight-mode() - mode: "None" > "EasyLight-Mode"
+2019-03-22 18:10:36 [S.A.R.A.H] »»» State changed -> Wohnzimmer::Light #light-mode() - mode: "None" > "Light-Mode"

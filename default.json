@@ -1,0 +1,271 @@
+{
+	"sarahGroups": {
+		"_home_": ["timeOfDay", "presence", "security"],
+		"_zones_": ["zone", "light", "shadow", "climate", "entertainment"]
+	},
+	"sarahConf": {
+		"_home_": {
+			"internal": {
+				"events": [
+					{
+						"event": "initSarah"
+					},
+					{
+						"event": "initHome"
+					}
+				]
+			},
+			"timeOfDay": {
+				"states": [
+					{
+						"state": "timeOfDay",
+						"value": "-",
+						"values": ["daytime", "evening", "nighttime"]
+					}
+				],
+				"events": [
+					{
+						"event": "atWakeUp",
+						"state": {
+							"state": "timeOfDay",
+							"value": "daytime"
+						}
+					},
+					{
+						"event": "atDaytime",
+						"state": {
+							"state": "timeOfDay",
+							"value": "daytime"
+						}
+					},
+					{
+						"event": "atEvening",
+						"state": {
+							"state": "timeOfDay",
+							"value": "evening"
+						}
+					},
+					{
+						"event": "atGoToSleep",
+						"state": {
+							"state": "timeOfDay",
+							"value": "nighttime"
+						}
+					},
+					{
+						"event": "atNighttime",
+						"state": {
+							"state": "timeOfDay",
+							"value": "nighttime"
+						}
+					}
+				]
+			},
+			"presence": {
+				"states": [
+					{
+						"state": "presence",
+						"value": "-",
+						"values": ["home", "away"]
+					}
+				],
+				"events": [
+					{
+						"event": "comeHome",
+						"state": {
+							"state": "presence",
+							"value": "home"
+						}
+					},
+					{
+						"event": "goAway",
+						"state": {
+							"state": "presence",
+							"value": "away"
+						}
+					},
+					{
+						"event": "aPersonComesHome"
+					},
+					{
+						"event": "aPersonLeavesHome"
+					}
+				]
+			},
+			"security": {
+				"states": [
+					{
+						"state": "alarm",
+						"value": "-",
+						"values": ["on", "off"]
+					}
+				],
+				"events": [
+					{
+						"event": "alarm-on",
+						"state": {
+							"state": "alarm",
+							"value": "on"
+						}
+					},
+					{
+						"event": "alarm-off",
+						"state": {
+							"state": "alarm",
+							"value": "off"
+						}
+					}
+				]
+			}
+		},
+		"_zones_": {
+			"zone": {
+				"states": [
+					{
+						"state": "mode",
+						"value": "-",
+						"values": ["normal", "tv-mode", "party-mode"]
+					}
+				],
+				"events": [
+					{
+						"event": "power-off",
+						"state": {
+							"state": "mode",
+							"value": "normal"
+						}
+					}
+				]
+			},
+			"light": {
+				"states": [
+					{
+						"state": "mode",
+						"value": "-",
+						"values": ["normal", "light-mode", "easyLight-mode"]
+					}
+				],
+				"events": [
+					{
+						"event": "power-off",
+						"state": {
+							"state": "mode",
+							"value": "normal"
+						}
+					},
+					{
+						"event": "light-mode",
+						"state": {
+							"state": "mode",
+							"value": "light-mode"
+						}
+					},
+					{
+						"event": "easyLight-mode",
+						"state": {
+							"state": "mode",
+							"value": "easyLight-mode"
+						}
+					}
+				]
+			},
+			"entertainment": {
+				"states": [
+					{
+						"state": "music",
+						"value": "-",
+						"values": ["off", "on"]
+					}
+				],
+				"events": [
+					{
+						"event": "music-off",
+						"state": {
+							"state": "music",
+							"value": "off"
+						}
+					},
+					{
+						"event": "music-on",
+						"state": {
+							"state": "music",
+							"value": "on"
+						}
+					}
+				]
+			}
+		},
+		"Wohnzimmer": {
+			"zone": {
+				"events": [
+					{
+						"event": "tv-mode",
+						"state": {
+							"state": "mode",
+							"value": "tv-mode"
+						}
+					},
+					{
+						"event": "party-mode",
+						"state": {
+							"state": "mode",
+							"value": "party-mode"
+						}
+					}
+				]
+			},
+			"entertainment": {
+				"states": [
+					{
+						"state": "video",
+						"value": "Off",
+						"values": ["Off", "On"]
+					}
+				],
+				"events": [
+					{
+						"event": "video-off",
+						"state": {
+							"state": "video",
+							"value": "Off"
+						}
+					},
+					{
+						"event": "video-on",
+						"state": {
+							"state": "video",
+							"value": "On"
+						}
+					}
+				]
+			}
+		},
+		"--Demo--": {
+			"entertainment": {
+				"states": [
+					{
+						"state": "video",
+						"value": "-",
+						"values": ["off", "on"]
+					}
+				],
+				"events": [
+					{
+						"event": "video-off",
+						"state": {
+							"state": "video",
+							"value": "off"
+						}
+					},
+					{
+						"event": "video-on",
+						"state": {
+							"state": "video",
+							"value": "on"
+						}
+					}
+				]
+			}
+		}
+	}
+}
