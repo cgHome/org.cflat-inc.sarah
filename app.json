@@ -7,7 +7,7 @@
     "en": "S.A.R.A.H"
   },
   "description": {
-    "en": "Event based lightweight middleware for Smart Home"
+    "en": "Event based lightweight middleware for flows"
   },
   "category": [
     "tools"

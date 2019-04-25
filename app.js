@@ -225,8 +225,7 @@ class SarahApp extends Homey.App {
 						let gIdx = !zone.parent
 							? this.settings.sarahGroups._home_.findIndex(n => n === groupName)
 							: this.settings.sarahGroups._zones_.findIndex(n => n === groupName);
-						//v2 cStates.push({ zIdx: zone.order, zone: zone.name, gIdx: gIdx, group: groupName, state: state.state, value: state.value });
-						cStates.push({ zIdx: zone.index, zone: zone.name, gIdx: gIdx, group: groupName, state: state.state, value: state.value });
+						cStates.push({ zIdx: zone.order, zone: zone.name, gIdx: gIdx, group: groupName, state: state.state, value: state.value });
 					}
 				}
 			}
@@ -245,8 +244,7 @@ class SarahApp extends Homey.App {
 	// Common
 
 	async onZoneAutocomplete(query, args) {
-		//v2 let zones = Object.values(await this.getZones()).sort((a, b) => a.order > b.order);
-		let zones = Object.values(await this.getZones()).sort((a, b) => a.index > b.index);
+		let zones = Object.values(await this.getZones()).sort((a, b) => a.order > b.order);
 
 		return Promise.resolve(zones.filter(zone => zone.name.toLowerCase().indexOf(query.toLowerCase()) > -1));
 	}
