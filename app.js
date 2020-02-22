@@ -8,7 +8,7 @@ if (process.env.DEBUG === "1") {
 const Homey = require("homey");
 const { HomeyAPI } = require("athom-api");
 
-class SarahApp extends Homey.App {
+class SarahEventApp extends Homey.App {
 	onInit() {
 		// Initialize Homey-App Loggers
 		this.appLogListener = new Homey.FlowCardTrigger("app_log_listener");
@@ -409,4 +409,4 @@ class SarahApp extends Homey.App {
 	}
 }
 
-module.exports = SarahApp;
+module.exports = SarahEventApp;
