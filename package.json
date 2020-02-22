@@ -1,6 +1,6 @@
 {
   "name": "org.cflat-inc.sarah-event",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Event based lightweight middleware for homey flows ",
   "main": "app.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "url": "git+https://github.com/cgHome/org.cflat-inc.sarah-event.git"
   },
   "bugs": {
-    "url": "https://github.com/cgHome/org.cflat-inc.sarah/issues"
+    "url": "https://github.com/cgHome/org.cflat-inc.sarah-event/issues"
   },
   "homepage": "https://apps.athom.com/app/org.cflat-inc.sarah-event",
   "dependencies": {
